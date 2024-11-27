@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <div class="card shadow-lg">
+                    <div class="row no-gutters">
+                        <div class="col-md-6 bg-primary text-white d-flex align-items-center justify-content-center">
+                            <div class="card-body text-center">
+                                <h2 class="card-title">BMI Calculator</h2>
+                                <form id="bmiForm">
+                                    <div class="form-group">
+                                        <label for="age">Age</label>
+                                        <input type="number" class="form-control" id="age" placeholder="Enter your age" required>
+                                    </div>
+                                    <!-- <div class="form-group">
+                                        <label for="gender">Gender</label>
+                                        <select class="form-control" id="gender" required>
+                                            <option value="">Select your gender</option>
+                                            <option value="male">Male</option>
+                                            <option value="female">Female</option>
+                                        </select>
+                                    </div> -->
+                                    <div class="form-group">
+                                        <label for="weight">Weight (kg)</label>
+                                        <input type="number" class="form-control" id="weight" placeholder="Enter your weight" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="height">Height (cm)</label>
+                                        <input type="number" class="form-control" id="height" placeholder="Enter your height" required>
+                                    </div>
+                                    <button type="submit" class="btn btn-light btn-block">Calculate BMI</button>
+                                    <button type="button" class="btn btn-secondary btn-block" id="resetBtn">Reset</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-md-6 d-flex align-items-center justify-content-center">
+                            <div class="card-body text-center">
+                                <h4 class="text-center">Your BMI: <span id="bmiResult" class="font-weight-bold">--</span></h4>
+                                <p class="text-center" id="bmiMessage">--</p>
+                                <div id="bmiDetails" class="mt-4">
+                                    <h5>BMI Categories:</h5>
+                                    <ul class="list-unstyled">
+                                        <li class="bg-light p-2 my-1 rounded">Underweight: BMI less than 18.5</li>
+                                        <li class="bg-light p-2 my-1 rounded">Normal weight: BMI 18.5 - 24.9</li>
+                                        <li class="bg-light p-2 my-1 rounded">Overweight: BMI 25 - 29.9</li>
+                                        <li class="bg-light p-2 my-1 rounded">Obesity: BMI 30 or greater</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
